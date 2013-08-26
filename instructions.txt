@@ -1,0 +1,19 @@
+** Rate limiting **
+
+ Pour éviter les attaques de déni de service, on souhaite mettre en place un système qui permet
+ de limiter le nombre de mise en panier par secondes. Par exemple, maximum x chansons par seconde
+ dans le panier.
+ 
+ Pour implémenter le rate limiting, il faut
+ 
+ 1. Créer une table "RateLimiting"
+ 2. Utiliser judicieusement le TTL de Cassandra
+ 3. Modifier la méthode CartService.addSong() pour mettre en place le rate limiting
+ 
+ Indice 1: voir les Valueless Entity (https://github.com/doanduyhai/Achilles/wiki/Entity-Mapping#value-less-entity)
+ Indice 2: pour compter le nombre de chansons, utiliser les nativeQuery (https://github.com/doanduyhai/Achilles/wiki/Queries#native-query).
+ Indice 3: la colonne correspondant à un "SELECT COUNT(*)" est "count" dans le resultset de retour. 
+           Plus de détails ici: https://github.com/doanduyhai/Achilles/wiki/Queries#mapping-of-cql3-functions 
+ 
+ 
+ 
