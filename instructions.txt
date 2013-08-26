@@ -1,0 +1,14 @@
+ Dans tout bon site d'e-commerce, il faut vendre quelque chose. Dans notre cas on vend des chansons.
+ 
+ Il faut donc implémenter un panier virtuel pour y mettre des chansons à acheter.
+ 
+ Le panier virtuel a une durée de vie limitée. Une fois créée, elle ne dure que x minutes.
+ Au bout de ce temps, si l'utilisateur n'a pas finalisé sa commande, elle sera détruite automatiquement.
+ On va utiliser les TTL de Cassandra pour gérer l'expiration automatique du panier
+ 
+ Il faut noter qu'à chaque ajout ou suppression d'une chanson dans le panier virtuel, le compteur d'expiration
+ est remis à zéro (évidemment)
+ 
+ Comme il n'y a pas de difficulté particulière pour la modéliser, l'entité "Cart" est déjà fournie.
+ 
+ 
