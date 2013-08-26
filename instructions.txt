@@ -1,0 +1,15 @@
+Exercice 4
+
+ Maintenant, on aimerait pouvoir paginer les ratings sur les chansons. En effet, le front
+ demande de pouvoir récupérer les ratings:
+ 
+  1. par parquet de x rating
+  2. dans l'ordre croissant ou décroissant
+  3. à partir d'un certain rating
+ 
+ 
+ 
+ 
+ 
+ 
+ 
