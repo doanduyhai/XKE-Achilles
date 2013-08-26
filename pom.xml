@@ -9,7 +9,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<achilles.version>2.0.4</achilles.version>
+		<achilles.version>2.0.6</achilles.version>
 		<slf4j.version>1.7.2</slf4j.version>
 
 		<powermock.version>1.5</powermock.version>
@@ -33,7 +33,12 @@
 			<artifactId>commons-codec</artifactId>
 			<version>1.8</version>
 		</dependency>
-
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2</version>
+		</dependency>
+		
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>

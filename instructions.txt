@@ -1,0 +1,9 @@
+Exercice 1
+
+ Pour faire passer les tests, il faut implémenter, dans l'ordre
+ 
+  1. UserService
+  2. ArtistService
+  3. SongService
+  
+  
