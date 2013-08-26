@@ -9,8 +9,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<achilles.version>2.0.4</achilles.version>
+		<achilles.version>2.0.6</achilles.version>
 		<slf4j.version>1.7.2</slf4j.version>
+		<commons-codec.version>1.8</commons-codec.version>
+		<commons-collections.version>3.2</commons-collections.version>
+		<lucene.version>4.4.0</lucene.version>
 
 		<powermock.version>1.5</powermock.version>
 		<mockito.version>1.9.5</mockito.version>
@@ -31,9 +34,19 @@
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
-			<version>1.8</version>
+			<version>${commons-codec.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>${commons-collections.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-common</artifactId>
+			<version>${lucene.version}</version>
+		</dependency>
+				
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -45,7 +58,7 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${slf4j.version}</version>
 		</dependency>
-
+		
 		<!-- TEST -->
 		<dependency>
 			<groupId>org.powermock</groupId>

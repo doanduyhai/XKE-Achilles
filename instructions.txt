@@ -1,0 +1,26 @@
+Exercice 2
+
+ C'est bien d'avoir des artistes, c'est encore mieux de pouvoir chercher des artistes par
+ 
+  a. nom, prénom
+  b. style de musique
+  c. groupe
+    
+ Pour cela, il faut créer des entitées pour indexer les artistes selon ces 3 critères.
+ 
+ Indice 1: penser "WideRow" et clustered entities (https://github.com/doanduyhai/Achilles/wiki/Entity-Mapping#clustered-entity)
+ Indice 2: une seule table suffit pour tout indexer
+ Indice 3: les clés de colonne doivent garantir l'unicité!
+ Indice 4: pour les noms de groupe, on peut utiliser la classe LuceneUtils fournie pour extraire les tokens
+ 
+ 
+ Solution temporaire: indexer les artistes en utilisant l'entité ArtistIndex
+ 
+ C'est une "clustered entity" avec comme valeur un objet Artist sérialisée en JSON
+ 
+ On dénormalise en dupliquant les artistes au lieu d'utiliser les jointures 
+   
+ 
+  
+  
+  
