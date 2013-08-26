@@ -1,0 +1,23 @@
+Exercice 3
+
+ On crée de la même manière que pour les artistes, un index pour chercher les chansons par 
+ title, style de musique ou auteur. La solution est donnée directement car il n'y a aucune difficulté particulière
+ 
+ Pour aider les utilisateurs à choisir une chanson à acheter, il faut leur donner la possibilité de "noter"
+ les chansons du catalogue existant. 
+ 
+ Il faut donc qu'on puisse donner une note et un commentaire sur chaque chanson. Pour ce faire, on utilisera
+ l'enum "Rating" eet le model "SongRating" déjà fourni. On doit également afficher, pour chaque chanson, la liste des notes
+ 
+  a. soit par ordre décroissante de date de création
+  b. soit par ordre décroissante de note. 
+     
+ Il faut également ajouter un type Counter sur l'entité Song pour compter les notes attribuées (déjà fait)
+ 
+ Pour faire passer les tests, il faut implémenter les méthodes manquantes dans "SongRatingService"
+ 
+ Indice: attention à l'unicité des colonnes quand vous faîtes des index
+ 
+ 
+ 
+ 
