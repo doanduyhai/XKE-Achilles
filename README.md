@@ -35,6 +35,11 @@ Code source et instructions pour la présentation d'Achilles au XKE chez Xebia
 
  Le matériel habituel pour coder (un IDE, un clavier et des doigts) 
  
+ Pour débugger, vous pouvez télécharger et installer les binaires de **[Cassandra]**.
+ 
+ Nous ne démarrerons pas un vrai Cassandra en local, nous utiliserons simplement le client CQL fourni
+ pour débugger et vérifier l'état de la base _embedded_
+ 
  
  
  
@@ -42,3 +47,4 @@ Code source et instructions pour la présentation d'Achilles au XKE chez Xebia
  
  
 [Achilles]: https://github.com/doanduyhai/achilles/wiki 
+[Cassandra]: http://www.apache.org/dyn/closer.cgi?path=/cassandra/1.2.9/apache-cassandra-1.2.9-bin.tar.gz
