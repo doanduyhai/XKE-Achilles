@@ -9,7 +9,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<achilles.version>2.0.5</achilles.version>
+		<achilles.version>2.0.6</achilles.version>
 		<slf4j.version>1.7.2</slf4j.version>
 
 		<powermock.version>1.5</powermock.version>
